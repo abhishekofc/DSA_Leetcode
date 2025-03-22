@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution {
+public class Cycle_Detection2 {
     public ListNode detectCycle(ListNode head) {
         Set <ListNode> seen = new HashSet<>();
         while(head != null){
