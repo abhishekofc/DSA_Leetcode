@@ -24,12 +24,5 @@ hs_err_pid*
 replay_pid*
 
 
-# Ignore compiled Java class files
-*.class
-
-# Ignore common Java build directories
-/bin/
-/out/
-/build/
 
 

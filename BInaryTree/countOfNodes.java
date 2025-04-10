@@ -1,4 +1,4 @@
-public class HeightOfTree {
+public class countOfNodes {
     static class Node{
         int data;
         Node left, right;
@@ -10,11 +10,11 @@ public class HeightOfTree {
         }
     }
 
-    public static int height(Node root){
+    public static int count(Node root){
         if(root == null) return 0;
-        int lh = height(root.left);
-        int rh = height(root.right);
-        return Math.max(lh,rh)+1;
+        int lh = count(root.left);
+        int rh = count(root.right);
+        return lh+rh+1;
     }
 
     public static void main (String []args){
@@ -33,9 +33,10 @@ public class HeightOfTree {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
 
-        System.out.println(height(root));
+        System.out.println(count(root));
 
     }
 
     
 }
+
