@@ -1,4 +1,7 @@
 /* 
+Binary Tree Representation in java 
+
+
 Time complexit is O(n)
 Space complexity is O(n) for the recursion stack
 Steps to build a binary tree:
@@ -10,6 +13,8 @@ Steps to build a binary tree:
    - Otherwise, create a new Node with the current value.
    - Recursively build the left and right subtrees.
  */
+
+
 
 
 public class BuildTREE {
