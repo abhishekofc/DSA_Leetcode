@@ -1,4 +1,4 @@
-public class sumOfNodes {
+public class NodeSum {
     static class Node{
         int data;
         Node left, right;

@@ -1,4 +1,4 @@
-public class HeightOfTree {
+public class TreeHeight {
     static class Node{
         int data;
         Node left, right;
@@ -9,7 +9,6 @@ public class HeightOfTree {
             this.right=null;
         }
     }
-
     public static int height(Node root){
         if(root == null) return 0;
         int lh = height(root.left);
