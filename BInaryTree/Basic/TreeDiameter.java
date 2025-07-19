@@ -1,5 +1,7 @@
-
-public class diameterOfTree {
+/*
+ * Diameter => the no of nodes in the longest path btw 2 leaves in a binary tree.
+ */
+public class TreeDiameter {
     static class Node{
         int data;
         Node left, right;
