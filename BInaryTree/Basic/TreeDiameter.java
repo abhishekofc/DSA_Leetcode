@@ -28,7 +28,7 @@ public class TreeDiameter {
         int rightHt = height(root.right);
 
         int selfdiam = leftHt + rightHt + 1;
-        return Math.max(selfDiam,Math.max(leftdiam,rightdiam));
+        return Math.max(selfdiam,Math.max(leftDiam,rightDiam));
 
     }
 
@@ -48,7 +48,7 @@ public class TreeDiameter {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
 
-        System.out.println(height(root));
+        System.out.println(diameter(root));
 
     }
 
