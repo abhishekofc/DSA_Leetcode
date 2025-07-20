@@ -20,16 +20,31 @@ public class TreeDiameter {
         return Math.max(lh,rh)+1;
     }
 
-    public static int diameter(Node root){
-        if(root == null) return 0; 
-        int leftDiam = diameter(root.left);
-        int leftHt = height(root.left);
-        int rightDiam = diameter(root.right);
-        int rightHt = height(root.right);
+    // public static int diameter(Node root){
+    //     if(root == null) return 0; 
+    //     int leftDiam = diameter(root.left);
+    //     int leftHt = height(root.left);
+    //     int rightDiam = diameter(root.right);
+    //     int rightHt = height(root.right);
 
-        int selfdiam = leftHt + rightHt + 1;
-        return Math.max(selfdiam,Math.max(leftDiam,rightDiam));
+    //     int selfdiam = leftHt + rightHt + 1;
+    //     return Math.max(selfdiam,Math.max(leftDiam,rightDiam));
 
+    // }  
+
+    // Approach 2 : optimized
+    static class Info{
+        int diam;
+        int ht;
+        public Info(int diam, int ht){
+            this.diam = diam;
+            this.ht = ht;
+        }
+    }
+    public static Info diameter(Node root){
+       Info leftInfo = diameter(root.left);
+       Info rightInfo = diameter(root.right);
+    
     }
 
     public static void main (String []args){
