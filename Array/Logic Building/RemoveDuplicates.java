@@ -4,7 +4,7 @@ import java.util.*;
 
 class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
-        Set<Integer> s = new TreeSet<>();
+        /*Set<Integer> s = new TreeSet<>();
         
         for (int val : nums) s.add(val);
         int k = s.size();
@@ -13,7 +13,16 @@ class RemoveDuplicates {
         for (int val : s) {
             nums[j++] = val;
         }
-        return k;
+        return k;*/
+         if(nums.length==0)return 0;
+        int i=0;
+        for(int j=1; j<nums.length;j++){
+            if(nums[i]!=nums[j]){
+                i++;
+                nums[i]=nums[j];
+            }
+        }
+        return i+1;
     }
     public static void main(String[] args) {
         int[] nums = {1, 1, 2, 2, 2, 3, 3};
