@@ -1,0 +1,27 @@
+What is DP ?
+    => DP is optimized recursion 
+    => Dynamic Programming is a technique in computer programming that helps 
+    to efficiently solve a class of problems that have 
+    overlapping subproblems and optimal substructure 
+
+How to identify ?
+    => Optimal Problem
+    => some choice is given (multiple branches in recursion tree)
+
+Ways to DP 
+    => Memoization(top Down)    
+            => Apply recursion and then store Subproblem => for resuse just like in case of fibonachi 
+
+
+    => Tabulation (Bottom Up)  => in case of stack overflow we avoid Memoization
+            => Using Iteration 
+            1.Initialise :  => Make Tables and initialise the dp array
+                ( Using Base Case = > we initialise DP array ) 
+            2.Memory
+            3. Filling
+    #STEPS  
+            dp[n+1]
+            for(int i=2 ; i<=n;i++){
+                dp[i] = dp[i-1] + dp[ i-2]
+            }
+            ans = dp[n]
