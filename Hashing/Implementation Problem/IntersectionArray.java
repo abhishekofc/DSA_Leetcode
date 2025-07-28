@@ -33,8 +33,7 @@ public static int[] intersectionCount(int[] nums1, int[] nums2) {
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 3, 4, 5};
         int[] nums2 = {4, 5, 6, 7, 8};
-        int[] result = intersectionCount(nums1,nums2);
-       System.out.println("Answer1: " + result[0] + ", Answer2: " + result[1]);
-
+        intersectionCount(nums1,nums2);
+        System.out.println(Arrays.toString(intersectionCount(nums1, nums2)));
     }
 }
