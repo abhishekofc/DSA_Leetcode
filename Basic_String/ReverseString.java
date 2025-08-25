@@ -21,7 +21,6 @@ class ReverseString {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
-        // Convert String to List<Character>
         List<Character> charList = new ArrayList<>();
         for (char c : input.toCharArray()) {
             charList.add(c);
@@ -30,7 +29,7 @@ class ReverseString {
         ReverseString sol = new ReverseString();
         sol.reverseString(charList);
 
-        // Print reversed list
+
         for (char c : charList) {
             System.out.print(c);
         }
