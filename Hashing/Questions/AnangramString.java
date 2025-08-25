@@ -6,7 +6,7 @@ Output: true
  */
 
  import java.util.*;
-public class AnagramString{
+public class AnangramString{
     public static boolean isAnangram(String s,String t){
         if(s.length() != t.length()) return false;
         HashMap<Character,Integer> map = new HashMap<>();

@@ -20,8 +20,7 @@ public class MajorityElement{
             //     map.put(val,1);
             // }
         }
-        Set<Integer> keySet = map.keySet();
-        for(int key:keySet){
+        for(int key:map.keySet()){
             if(map.get(key) > arr.length / 3) {
                 System.out.println(key);
                 return; 
