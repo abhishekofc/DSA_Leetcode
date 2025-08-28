@@ -13,7 +13,6 @@ public class CountOddInNum {
         return cnt;
     }
     public static void main(String[] args){
-        //Scanner sc = new Scanner(System.in);
         int n = 25;
 
         int result = CountNumDigit(n);
