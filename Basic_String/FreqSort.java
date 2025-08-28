@@ -21,8 +21,6 @@ class FreqSort {
 
         return uniqueChars;
     }
-
-    // Main method to test the function
     public static void main(String[] args) {
         FreqSort sol = new FreqSort();
         String s = "tree";
