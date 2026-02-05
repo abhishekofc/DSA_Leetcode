@@ -14,7 +14,7 @@ Input: Move#Hash#to#Front
 Output: ###MoveHashtoFront
 */
 
-
+ 
 public class Prob1 {
     static void moveSpaceInFront(char str[]) {
         int i = str.length-1;
