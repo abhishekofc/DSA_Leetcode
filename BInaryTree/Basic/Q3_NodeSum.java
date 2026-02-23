@@ -1,4 +1,4 @@
-public class NodeSum {
+public class Q3_NodeSum {
     static class Node{
         int data;
         Node left, right;
