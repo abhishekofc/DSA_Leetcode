@@ -60,6 +60,21 @@ public class Q8_LowestCommonAncestor {
             return path1.get(i-1);
         }
 
+        // lca 2 => approach 2
+        public static Node lca2(Node root , int n1 , int n2){
+            if (root == null) return null;
+            if(root.data == n1 || root.data == n2) return root;
+
+            Node leftLca = lca2(root.left, n1, n2);
+            Node rightLca = lca2(root.right, n1, n2);
+
+           // leftLca = val and rightLca = null
+            if(rightLca == null) return leftLca;
+            if(leftLca == null) return rightLca;
+            
+            return root;
+        }
+
     public static void main(String[] args) {
         /*
                   1
@@ -75,7 +90,19 @@ public class Q8_LowestCommonAncestor {
         root.left.right=new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        Node result = lca(root, 4, 5);
+        Node result = lca2(root, 4, 5);
         System.out.println("LCA of 4 and 5: " + result.data);
     }
 }
+
+
+/*
+
+Approach 2 
+what we have to do ?
+    1 if root is null => return null && if root is equal to n1 or n2 => return root
+    2. if rightlca = null => return leftlca
+     if leftlca = null => return rightlca
+     right & left != null => return root 
+
+ */
